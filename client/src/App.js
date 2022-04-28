@@ -17,6 +17,7 @@ const client = new ApolloClient({
     });
   },
   uri: "/graphql",
+  cache: new InMemoryCache()
 });
 
 function App() {
@@ -28,11 +29,11 @@ function App() {
           <Routes>
             <Route 
               path='/' 
-              component={SearchBooks} 
+              element = {<SearchBooks />} 
             />
             <Route 
               path='/saved' 
-              component={SavedBooks} 
+              element = {<SavedBooks />} 
             />
             <Route 
               path='*'
