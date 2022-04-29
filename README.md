@@ -42,8 +42,8 @@ It can also be used to better understand how GraphQL API and Apollo Server work 
 
 ### Screenshot:
 
-![Screenshot](portfolio/src/assets/images/ScreenShot1.png)
-![Screenshot](portfolio/src/assets/images/ScreenShot2.png)
+![Screenshot](assets/ScreenShot1.png)
+![Screenshot](assets/ScreenShot2.png)
 
 ### Deploy:
 
