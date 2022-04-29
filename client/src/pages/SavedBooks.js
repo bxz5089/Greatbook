@@ -8,7 +8,7 @@ import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
-  const { data, loading, error } = useQuery(GET_ME);
+  const { loading, data } = useQuery(GET_ME);
   const [deleteBook] = useMutation(REMOVE_BOOK);
   const userData = data?.me || {};
 
@@ -20,7 +20,7 @@ const SavedBooks = () => {
     );
   };
 
-  const userDataLength = Object.keys(userData).length;
+  // const userDataLength = Object.keys(userData).length;
 
   // useEffect(() => {
   //   const getUserData = async () => {
